@@ -12,4 +12,3 @@ class Car(models.Model):
     picture = fields.Binary(string="Car Picture")
     price = fields.Float(string="Price")
     rented = fields.Boolean(string="Rented", readonly=True) 
-    user_id = fields.Many2one('res.partner')
